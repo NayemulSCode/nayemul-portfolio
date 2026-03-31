@@ -13,12 +13,12 @@ export function ProjectsSection() {
   const filtered = PROJECTS.filter((p) => active === "all" || p.category === active);
 
   return (
-    <section id="projects" className="relative z-10 bg-[var(--bg2)]" style={{ padding: "7rem 3rem" }}>
+    <section id="projects" className="relative z-10 bg-[var(--bg2)] !py-12 !px-12">
       <div className="max-w-[1100px] mx-auto">
         <SectionHeader eyebrow="Projects" title="Selected builds" />
 
         {/* Filters */}
-        <div className="flex gap-2 flex-wrap mt-10 mb-8">
+        <div className="flex gap-2 flex-wrap !mt-10 !mb-8">
           {PROJECT_FILTERS.map((f) => (
             <button
               key={f.value}
@@ -44,7 +44,7 @@ export function ProjectsSection() {
             </Reveal>
           ))}
           {filtered.length === 0 && (
-            <p className="col-span-3 text-center text-[var(--text3)] font-mono py-16">
+            <p className="col-span-3 text-center text-[var(--text3)] font-mono !py-16">
               No projects in this category yet.
             </p>
           )}

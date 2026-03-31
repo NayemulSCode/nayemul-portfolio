@@ -5,17 +5,17 @@ import { PERSONAL, FACTS, SKILLS } from "@/lib/data";
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative z-10 bg-[var(--bg2)]" style={{ padding: "7rem 3rem" }}>
+    <section id="about" className="relative z-10 bg-[var(--bg2)] !py-12 !px-12">
       <div className="max-w-[1100px] mx-auto">
         <SectionHeader
           eyebrow="About Me"
           title={<>Engineer by logic,<br />creator by instinct</>}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-20 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-20 !mt-16">
           {/* Left — Bio + Facts */}
           <Reveal>
-            <div className="space-y-5">
+          <div className="!space-y-5">
               {PERSONAL.bio.map((p, i) => (
                 <p key={i} className="text-[0.95rem] text-[var(--text2)] leading-[1.85]">
                   {i === 0 ? (
@@ -31,7 +31,7 @@ export function AboutSection() {
             </div>
 
             {/* Facts grid */}
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-2 gap-4 !mt-8">
               {FACTS.map((f) => (
                 <div
                   key={f.key}

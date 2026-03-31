@@ -11,8 +11,8 @@ export function SkillBar({ name, pct }: SkillBarProps) {
   const { ref, inView } = useInView(0.2);
 
   return (
-    <div ref={ref} className="mb-6">
-      <div className="flex justify-between mb-2">
+    <div ref={ref} className="!mb-6">
+      <div className="flex justify-between !mb-2">
         <span className="text-[0.85rem] font-medium">{name}</span>
         <span className="font-mono text-[0.72rem] text-[var(--cyan)]">{pct}%</span>
       </div>

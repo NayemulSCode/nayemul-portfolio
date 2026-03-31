@@ -41,11 +41,10 @@ export function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 flex items-center justify-between",
+          "fixed top-0 left-0 right-0 z-50 flex items-center justify-between !py-5 !px-12",
           "bg-[rgba(4,6,16,0.7)] backdrop-blur-xl transition-all duration-300",
           scrolled && "border-b border-white/[0.07]"
         )}
-        style={{ padding: "1.25rem 3rem" }}
       >
         {/* Logo */}
         <a href="#hero" className="font-mono text-[0.9rem] font-medium tracking-widest text-[var(--cyan)]">

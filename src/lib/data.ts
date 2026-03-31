@@ -7,21 +7,21 @@ export const PERSONAL = {
   role: "Software Engineer",
   tagline: "// Frontend Specialist",
   bio: [
-    "I'm Nayemul Saheb, a Software Engineer with a passion for building products that feel as good as they perform. I specialize in frontend development across modern JavaScript ecosystems — crafting pixel-perfect UIs backed by robust architecture.",
-    "My work lives at the intersection of engineering rigor and design sensibility. I believe code is a craft, and every component, every API boundary, every UI interaction is an opportunity to do something memorable.",
-    "Outside the terminal, I train hard, study systems design, and occasionally cause problems with generative art experiments.",
+    "I'm Nayemul Saheb, a Software Engineer with 4+ years of professional experience building scalable, production-ready web applications.",
+    "Specializes in React, Next.js, Node.js, TypeScript, and the MERN stack, with a strong focus on performance, clean architecture, and maintainable code. Has contributed to international products serving markets in Ireland, Cameroon, and beyond, and represented a client project at Web Summit 2024 in Lisbon, Portugal.",
+    "Outside the terminal, I train hard, study systems design, and occasionally cause problems with generative ai experiments.",
   ],
   availability: "Available for new projects",
-  email: "nayemul@example.com",
+  email: "dev.nayemul@gmail.com",
   location: "Dhaka / Remote",
   status: "Open to Work",
   statusColor: "green" as const,
   education: "CSE Graduate",
   languages: "EN, BN",
   social: {
-    github: "https://github.com/nayemulsaheb",
-    linkedin: "https://linkedin.com/in/nayemulsaheb",
-    twitter: "https://twitter.com/nayemulsaheb",
+    github: "https://github.com/nayemulSCode",
+    linkedin: "https://www.linkedin.com/in/nayemuldev",
+    twitter: "https://x.com/Nayemul_DEV",
   },
 };
 

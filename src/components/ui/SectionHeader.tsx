@@ -9,7 +9,7 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ eyebrow, title, subtitle, className }: SectionHeaderProps) {
   return (
-    <div className={cn("mb-4", className)}>
+    <div className={cn("!mb-4", className)}>
       <p className="eyebrow">{eyebrow}</p>
       <h2
         className="font-display text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1] tracking-[-0.01em] mb-4"

@@ -24,8 +24,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ padding: "8rem 3rem 4rem" }}
+      className="relative min-h-screen flex items-center overflow-hidden pt-32 pb-16 px-12"
     >
       {/* Orbs */}
       <div
@@ -91,7 +90,7 @@ export function HeroSection() {
         </p>
 
         {/* CTAs */}
-        <div className="flex gap-4 flex-wrap mb-16">
+        <div className="flex gap-4 flex-wrap !my-4">
           <LinkButton href="#projects" variant="primary">
             Explore Work
           </LinkButton>

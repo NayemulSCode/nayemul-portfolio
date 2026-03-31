@@ -4,19 +4,19 @@ type Testimonial = (typeof TESTIMONIALS)[number];
 
 export function TestimonialCard({ t }: { t: Testimonial }) {
   return (
-    <div className="glass-card p-8 relative overflow-hidden group transition-colors duration-250 hover:border-white/[0.13]">
+    <div className="glass-card !p-8 relative overflow-hidden group transition-colors duration-250 hover:border-white/[0.13]">
       {/* Top glow line on hover */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--cyan)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       {/* Stars */}
-      <div className="flex gap-[2px] mb-5">
+      <div className="flex gap-[2px] !mb-5">
         {Array.from({ length: t.stars }).map((_, i) => (
           <span key={i} className="text-[0.85rem] text-[var(--cyan)] [text-shadow:0_0_8px_var(--cyan-glow)]">★</span>
         ))}
       </div>
 
       {/* Quote */}
-      <p className="text-[0.875rem] leading-[1.8] text-[var(--text2)] italic mb-6">
+      <p className="text-[0.875rem] leading-[1.8] text-[var(--text2)] italic !mb-6">
         <span className="text-[var(--cyan)] opacity-30 font-serif text-[3rem] leading-0 align-[-0.8rem] mr-1">&quot;</span>
         {t.quote}
       </p>

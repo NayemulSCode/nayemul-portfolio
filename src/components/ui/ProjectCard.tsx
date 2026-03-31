@@ -31,18 +31,18 @@ export function ProjectCard({ project }: { project: Project }) {
 
       {/* Body */}
       <div>
-        <div className="flex flex-wrap gap-[5px] mb-3">
+        <div className="flex flex-wrap gap-[5px] !mb-3">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-[0.55rem] py-[0.18rem] rounded-[4px] font-mono text-[0.62rem] tracking-[0.06em] bg-[var(--glass2)] text-[var(--text3)] border border-white/[0.07]"
+              className="!px-[0.55rem] py-[0.18rem] rounded-[4px] font-mono text-[0.62rem] tracking-[0.06em] bg-[var(--glass2)] text-[var(--text3)] border border-white/[0.07]"
             >
               {tag}
             </span>
           ))}
         </div>
-        <h3 className="text-[1.05rem] font-bold tracking-[-0.01em] mb-2">{project.title}</h3>
-        <p className="text-[0.85rem] text-[var(--text2)] leading-[1.7] mb-5">{project.description}</p>
+        <h3 className="text-[1.05rem] font-bold tracking-[-0.01em] !mb-2">{project.title}</h3>
+        <p className="text-[0.85rem] text-[var(--text2)] leading-[1.7] !mb-5">{project.description}</p>
         <div className="flex gap-4">
           <a
             href={project.liveUrl}

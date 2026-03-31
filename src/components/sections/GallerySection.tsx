@@ -15,7 +15,7 @@ export function GallerySection() {
   const items = GALLERY[tab];
 
   return (
-    <section id="gallery" className="relative z-10 bg-[var(--bg2)]" style={{ padding: "7rem 3rem" }}>
+    <section id="gallery" className="relative z-10 bg-[var(--bg2)] !py-12 !px-12">
       <div className="max-w-[1100px] mx-auto">
         <SectionHeader
           eyebrow="Gallery"
@@ -24,7 +24,7 @@ export function GallerySection() {
 
         {/* Tab toggle */}
         <div
-          className="inline-flex mt-10 mb-10 rounded-[var(--radius-sm)] overflow-hidden border border-white/[0.07] bg-[var(--glass)] backdrop-blur-md"
+          className="inline-flex !mt-10 !mb-10 rounded-[var(--radius-sm)] overflow-hidden border border-white/[0.07] bg-[var(--glass)] backdrop-blur-md"
         >
           {TABS.map((t) => (
             <button
@@ -82,7 +82,7 @@ export function GallerySection() {
                 </span>
               </div>
               <div
-                className="absolute bottom-0 left-0 right-0 px-4 py-3 text-[0.75rem] font-semibold tracking-[0.04em] text-[#e0f8ff]"
+                className="absolute bottom-0 left-0 right-0 !px-4 !py-3 text-[0.75rem] font-semibold tracking-[0.04em] text-[#e0f8ff]"
                 style={{ background: "linear-gradient(to top, rgba(4,6,16,0.88), transparent)" }}
               >
                 {item.label}

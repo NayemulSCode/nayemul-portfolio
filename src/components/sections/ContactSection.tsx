@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 
 const CHANNELS = [
   { icon: "✉",  label: PERSONAL.email,                    href: `mailto:${PERSONAL.email}` },
-  { icon: "💼", label: "linkedin.com/in/nayemulsaheb",    href: PERSONAL.social.linkedin   },
-  { icon: "🐙", label: "github.com/nayemulsaheb",         href: PERSONAL.social.github     },
-  { icon: "𝕏",  label: "@nayemulsaheb",                   href: PERSONAL.social.twitter    },
+  { icon: "💼", label: "linkedin.com/in/nayemuldev",    href: PERSONAL.social.linkedin   },
+  { icon: "🐙", label: "github.com/nayemulSCode",         href: PERSONAL.social.github     },
+  { icon: "𝕏",  label: "@Nayemul_DEV",                   href: PERSONAL.social.twitter    },
 ];
 
 export function ContactSection() {
@@ -47,7 +47,7 @@ export function ContactSection() {
     );
 
   return (
-    <section id="contact" className="relative z-10 overflow-hidden" style={{ padding: "7rem 3rem" }}>
+    <section id="contact" className="relative z-10 overflow-hidden !py-12 !px-12">
       {/* Violet orb */}
       <div
         aria-hidden="true"
@@ -64,13 +64,13 @@ export function ContactSection() {
           title={<>Let&apos;s build the<br />next thing</>}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-20 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-20 !mt-16">
           {/* Left */}
           <Reveal>
-            <h3 className="text-[1.5rem] font-bold leading-[1.3] mb-4" style={{ fontFamily: "var(--font-syne)" }}>
+            <h3 className="text-[1.5rem] font-bold leading-[1.3] !mb-4" style={{ fontFamily: "var(--font-syne)" }}>
               Open to great<br />opportunities
             </h3>
-            <p className="text-[0.9rem] text-[var(--text2)] leading-[1.8] mb-10">
+            <p className="text-[0.9rem] text-[var(--text2)] leading-[1.8] !mb-10">
               Whether it&apos;s a product to architect, a team to join, or a challenging problem to crack
               — I&apos;m interested. Send a message and I&apos;ll respond within 24 hours.
             </p>
@@ -102,7 +102,7 @@ export function ContactSection() {
             <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] mb-2">
+                  <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] !mb-2">
                     First Name
                   </label>
                   <input
@@ -111,11 +111,11 @@ export function ContactSection() {
                     className={inputCls(!!errors.firstName)}
                   />
                   {errors.firstName && (
-                    <p className="mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.firstName.message}</p>
+                    <p className="!mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.firstName.message}</p>
                   )}
                 </div>
                 <div>
-                  <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] mb-2">
+                  <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)]  !my-2">
                     Last Name
                   </label>
                   <input
@@ -124,13 +124,13 @@ export function ContactSection() {
                     className={inputCls(!!errors.lastName)}
                   />
                   {errors.lastName && (
-                    <p className="mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.lastName.message}</p>
+                    <p className="!mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.lastName.message}</p>
                   )}
                 </div>
               </div>
 
               <div>
-                <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] mb-2">
+                <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] !my-2">
                   Email
                 </label>
                 <input
@@ -140,12 +140,12 @@ export function ContactSection() {
                   className={inputCls(!!errors.email)}
                 />
                 {errors.email && (
-                  <p className="mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.email.message}</p>
+                  <p className="!mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.email.message}</p>
                 )}
               </div>
 
               <div>
-                <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] mb-2">
+                <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] !my-2">
                   Subject
                 </label>
                 <input
@@ -156,7 +156,7 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] mb-2">
+                <label className="block font-mono text-[0.68rem] tracking-[0.12em] uppercase text-[var(--text3)] !my-2">
                   Message
                 </label>
                 <textarea
@@ -165,7 +165,7 @@ export function ContactSection() {
                   className={cn("form-textarea", !!errors.message && "!border-[var(--pink)]")}
                 />
                 {errors.message && (
-                  <p className="mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.message.message}</p>
+                  <p className="!mt-1 font-mono text-[0.68rem] text-[var(--pink)]">{errors.message.message}</p>
                 )}
               </div>
 
