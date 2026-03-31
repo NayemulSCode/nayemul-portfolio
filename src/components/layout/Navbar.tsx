@@ -41,11 +41,11 @@ export function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 py-5",
+          "fixed top-0 left-0 right-0 z-50 flex items-center justify-between",
           "bg-[rgba(4,6,16,0.7)] backdrop-blur-xl transition-all duration-300",
           scrolled && "border-b border-white/[0.07]"
         )}
-        style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
+        style={{ padding: "1.25rem 3rem" }}
       >
         {/* Logo */}
         <a href="#hero" className="font-mono text-[0.9rem] font-medium tracking-widest text-[var(--cyan)]">
@@ -95,7 +95,7 @@ export function Navbar() {
           <a
             href="#contact"
             className={cn(
-              "hidden md:inline-flex px-6 py-2 rounded-[var(--r-sm)]",
+              "hidden md:inline-flex px-8 py-3 rounded-[var(--radius-sm)]",
               "border border-[var(--cyan2)] text-[0.72rem] font-semibold tracking-[0.12em] uppercase text-[var(--cyan)]",
               "relative overflow-hidden transition-all duration-200",
               "hover:shadow-[0_0_18px_var(--cyan-glow)]",
@@ -155,7 +155,7 @@ export function Navbar() {
         <a
           href="#contact"
           onClick={() => setOpen(false)}
-          className="mt-4 text-center py-3 rounded-[var(--r-sm)] border border-[var(--cyan2)] text-[var(--cyan)] text-sm font-semibold tracking-widest uppercase"
+          className="mt-4 text-center py-3 rounded-[var(--radius-sm)] border border-[var(--cyan2)] text-[var(--cyan)] text-sm font-semibold tracking-widest uppercase"
         >
           Hire Me
         </a>

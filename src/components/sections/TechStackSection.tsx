@@ -17,7 +17,7 @@ export function TechStackSection() {
             <Reveal key={tech.name} delay={i * 30}>
               <div
                 className={[
-                  "p-6 rounded-[var(--r)] border border-white/[0.07] bg-[var(--glass)]",
+                  "p-6 rounded-[var(--radius)] border border-white/[0.07] bg-[var(--glass)]",
                   "backdrop-blur-md text-center relative overflow-hidden",
                   "transition-all duration-250",
                   "before:absolute before:inset-0 before:bg-radial-[circle_at_50%_0%] before:from-[var(--cyan-dim)] before:to-transparent before:opacity-0 before:transition-opacity before:duration-300",

@@ -24,7 +24,7 @@ export function GallerySection() {
 
         {/* Tab toggle */}
         <div
-          className="inline-flex mt-10 mb-10 rounded-[var(--r-sm)] overflow-hidden border border-white/[0.07] bg-[var(--glass)] backdrop-blur-md"
+          className="inline-flex mt-10 mb-10 rounded-[var(--radius-sm)] overflow-hidden border border-white/[0.07] bg-[var(--glass)] backdrop-blur-md"
         >
           {TABS.map((t) => (
             <button
@@ -52,7 +52,7 @@ export function GallerySection() {
             <div
               key={i}
               className={cn(
-                "relative rounded-[var(--r)] border border-white/[0.07] overflow-hidden",
+                "relative rounded-[var(--radius)] border border-white/[0.07] overflow-hidden group",
                 "aspect-[4/3] bg-[var(--glass)] cursor-pointer",
                 "transition-all duration-300",
                 "hover:border-[var(--cyan2)] hover:scale-[1.02] hover:shadow-[0_0_32px_var(--cyan-dim)]"

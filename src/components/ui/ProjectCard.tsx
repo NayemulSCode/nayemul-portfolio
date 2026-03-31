@@ -7,7 +7,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       className={cn(
-        "glass-card overflow-hidden",
+        "glass-card overflow-hidden group",
         "transition-all duration-300",
         "hover:-translate-y-[5px] hover:border-white/[0.13]",
         "hover:shadow-[0_24px_48px_rgba(0,0,0,0.4),0_0_40px_var(--cyan-dim)]"
@@ -30,7 +30,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {/* Body */}
-      <div className="p-6">
+      <div>
         <div className="flex flex-wrap gap-[5px] mb-3">
           {project.tags.map((tag) => (
             <span

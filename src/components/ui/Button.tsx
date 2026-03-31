@@ -19,16 +19,16 @@ const variants = {
     "bg-gradient-to-r from-[var(--cyan)] to-[var(--cyan2)] text-[var(--bg)]",
     "shadow-[0_0_24px_rgba(0,245,255,0.3)]",
     "hover:shadow-[0_0_40px_rgba(0,245,255,0.5)] hover:-translate-y-[2px]",
-    "rounded-[var(--r-sm)] px-8 py-[0.875rem] text-[0.8rem]",
+    "rounded-[var(--radius-sm)] px-8 py-[0.875rem] text-[0.8rem]",
   ].join(" "),
   glass: [
     "bg-[var(--glass2)] border border-white/[0.13] text-[var(--text)]",
-    "backdrop-blur-md rounded-[var(--r-sm)] px-8 py-[0.875rem] text-[0.8rem]",
+    "backdrop-blur-md rounded-[var(--radius-sm)] px-8 py-[0.875rem] text-[0.8rem]",
     "hover:border-[var(--violet)] hover:text-[var(--violet)] hover:bg-[var(--violet-dim)]",
   ].join(" "),
   outline: [
     "border border-[var(--cyan2)] text-[var(--cyan)] bg-transparent",
-    "rounded-[var(--r-sm)] px-6 py-[0.5rem] text-[0.72rem]",
+    "rounded-[var(--radius-sm)] px-6 py-[0.5rem] text-[0.72rem]",
     "hover:bg-[var(--cyan-dim)] hover:shadow-[0_0_18px_var(--cyan-glow)]",
   ].join(" "),
 };

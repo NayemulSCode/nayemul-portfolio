@@ -55,12 +55,14 @@ export function CustomCursor() {
     <>
       <div
         ref={dotRef}
-        className={`cursor-dot hidden md:block${hovering ? " hover" : ""}`}
+        className="cursor-dot"
+        style={{ display: "block" }}
         aria-hidden="true"
       />
       <div
         ref={ringRef}
-        className={`cursor-ring hidden md:block${hovering ? " hover" : ""}`}
+        className="cursor-ring"
+        style={{ display: "block" }}
         aria-hidden="true"
       />
     </>

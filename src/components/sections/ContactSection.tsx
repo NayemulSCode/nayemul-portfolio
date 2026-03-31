@@ -82,13 +82,13 @@ export function ContactSection() {
                   target={c.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
                   className={cn(
-                    "flex items-center gap-4 px-[1.1rem] py-[0.9rem] rounded-[var(--r-sm)]",
+                    "flex items-center gap-4 px-[1.1rem] py-[0.9rem] rounded-[var(--radius-sm)]",
                     "border border-white/[0.07] bg-[var(--glass)] backdrop-blur-md",
                     "text-[0.85rem] text-[var(--text2)] transition-all duration-200",
                     "hover:border-[var(--cyan2)] hover:text-[var(--cyan)] hover:bg-[var(--cyan-dim)] hover:shadow-[0_0_20px_var(--cyan-dim)]"
                   )}
                 >
-                  <div className="w-[34px] h-[34px] rounded-[var(--r-sm)] border border-white/[0.13] bg-[var(--glass2)] flex items-center justify-center text-base flex-shrink-0">
+                  <div className="w-[34px] h-[34px] rounded-[var(--radius-sm)] border border-white/[0.13] bg-[var(--glass2)] flex items-center justify-center text-base flex-shrink-0">
                     {c.icon}
                   </div>
                   <span>{c.label}</span>
@@ -173,7 +173,7 @@ export function ContactSection() {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "w-full py-4 rounded-[var(--r-sm)] mt-2",
+                  "w-full py-4 rounded-[var(--radius-sm)] mt-2",
                   "bg-gradient-to-r from-[var(--cyan)] to-[var(--cyan2)]",
                   "text-[var(--bg)] font-bold text-[0.82rem] tracking-[0.12em] uppercase",
                   "shadow-[0_0_24px_rgba(0,245,255,0.25)] transition-all duration-200",

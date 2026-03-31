@@ -108,8 +108,8 @@ export function HeroSection() {
               className={[
                 "px-8 py-5 text-center border border-white/[0.07] bg-[var(--glass)] backdrop-blur-md",
                 "transition-colors duration-200 hover:border-[var(--cyan2)]",
-                i === 0 ? "rounded-tl-[var(--r-sm)] rounded-tr-[var(--r-sm)] sm:rounded-tr-none sm:rounded-bl-[var(--r-sm)]" : "",
-                i === STATS.length - 1 ? "rounded-bl-[var(--r-sm)] rounded-br-[var(--r-sm)] sm:rounded-bl-none sm:rounded-tr-[var(--r-sm)]" : "",
+                i === 0 ? "rounded-tl-[var(--radius-sm)] rounded-tr-[var(--radius-sm)] sm:rounded-tr-none sm:rounded-bl-[var(--radius-sm)]" : "",
+                i === STATS.length - 1 ? "rounded-bl-[var(--radius-sm)] rounded-br-[var(--radius-sm)] sm:rounded-bl-none sm:rounded-tr-[var(--radius-sm)]" : "",
                 i > 0 ? "border-t-0 sm:border-t sm:border-l-0" : "",
               ].join(" ")}
             >
